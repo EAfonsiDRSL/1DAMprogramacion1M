@@ -13,7 +13,7 @@ public class Ejercicio {
 
         System.out.println("Mostramos el valor constante i tipo wrapper integer => "+i);
         System.out.println("Mostramos el valor constante i tipo wrapper integer => "+c);
-        System.out.println("Mostramos el valor constante i tipo wrapper String => "+SALUDO.);
+        System.out.println("Mostramos el valor constante i tipo wrapper String => "+SALUDO);
 
     }
 }
