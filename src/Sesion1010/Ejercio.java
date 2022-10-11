@@ -28,7 +28,7 @@ public class Ejercio {
             System.out.println("notable");
         }else if (nota>=9&&nota<=9.99) {
             System.out.println("sobresaliente");
-        }else if (nota=10.00) {
+        }else if (nota==10) {
             System.out.println("En hora buena has conseguido un sobresaliente");
         }
     }
