@@ -30,6 +30,8 @@ public class Ejercio {
             System.out.println("sobresaliente");
         }else if (nota==10) {
             System.out.println("En hora buena has conseguido un sobresaliente");
+        } else if (nota>10) {
+            System.out.println("Nota invalida, \n porfavor introduzca una nota comprendida entre el 0 y el 10");
         }
     }
 }
