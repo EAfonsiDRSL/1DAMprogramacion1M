@@ -21,7 +21,6 @@ public class AplicarLoAprendido {
         System.out.println("quiero deciros que tengais un muy buen y de provecho fin de semana y resto de dia, ");
         System.out.println("ahora si comenzemos. "+acotacion);
         System.out.println("\n");
-        System.out.println("\n");
         System.out.println("Esta es una torre: \u2656");
         System.out.println("Esto es un caballo: \u2658");
         System.out.println("Esto es un alfil: \u2657");
@@ -39,14 +38,16 @@ public class AplicarLoAprendido {
         System.out.println("-Peon: \u2659  ==> sus movimientos son unicament una casillas hacia delante aunque \n al comer otra ficha solo puede hacerlo en diagonal");
         System.out.println("\n");
         System.out.println("Este es el terreno de juego, donde se disputan numerosas batallas sangrientas entre las piezas \n para conquistar el tablero.");
-        System.out.println("   "+"███"+"   "+"███"+"   "+"███"+"   "+"███");
-        System.out.println("███"+"   "+"███"+"   "+"███"+"   "+"███"+"   ");
-        System.out.println("   "+"███"+"   "+"███"+"   "+"███"+"   "+"███");
-        System.out.println("███"+"   "+"███"+"   "+"███"+"   "+"███"+"   ");
-        System.out.println("   "+"███"+"   "+"███"+"   "+"███"+"   "+"███");
-        System.out.println("███"+"   "+"███"+"   "+"███"+"   "+"███"+"   ");
-        System.out.println("   "+"███"+"   "+"███"+"   "+"███"+"   "+"███");
-        System.out.println("███"+"   "+"███"+"   "+"███"+"   "+"███"+"   ");
+        System.out.println("8    "+"███"+"   "+"███"+"   "+"███"+"   "+"███");
+        System.out.println("7 ███"+"   "+"███"+"   "+"███"+"   "+"███"+"   ");
+        System.out.println("6    "+"███"+"   "+"███"+"   "+"███"+"   "+"███");
+        System.out.println("5 ███"+"   "+"███"+"   "+"███"+"   "+"███"+"   ");
+        System.out.println("4    "+"███"+"   "+"███"+"   "+"███"+"   "+"███");
+        System.out.println("3 ███"+"   "+"███"+"   "+"███"+"   "+"███"+"   ");
+        System.out.println("2    "+"███"+"   "+"███"+"   "+"███"+"   "+"███");
+        System.out.println("1 ███"+"   "+"███"+"   "+"███"+"   "+"███"+"   ");
+        System.out.println("   A  "+"B"+"  C  "+"D"+"  E  "+"F"+"  G  "+"H");
+
 
 
 
