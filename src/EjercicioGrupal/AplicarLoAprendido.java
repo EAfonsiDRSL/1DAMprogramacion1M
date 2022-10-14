@@ -21,6 +21,7 @@ public class AplicarLoAprendido {
         System.out.println("quiero deciros que tengais un muy buen y de provecho fin de semana y resto de dia, ");
         System.out.println("ahora si comenzemos. "+acotacion);
         System.out.println("\n");
+        System.out.println("\n");
         System.out.println("Esta es una torre: \u2656");
         System.out.println("Esto es un caballo: \u2658");
         System.out.println("Esto es un alfil: \u2657");
