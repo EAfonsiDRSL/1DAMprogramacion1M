@@ -15,7 +15,7 @@ public class Ejercicio4Condicionales {
         System.out.println("Porfavor introduzca el numero de horas trabajadas semanalmente");
         horas=sc.nextFloat();
         if (horas <= 40.00) {
-            System.out.println(horas*12+"€");
-        }else System.out.println(horas*16+"€");
+            System.out.println("Su salario semanal es de  "+horas*12+"€");
+        }else System.out.println("Su salario semanal es de  "+horas*16+"€");
     }
 }

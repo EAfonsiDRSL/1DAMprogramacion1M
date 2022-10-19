@@ -22,7 +22,7 @@ public class Ejercicio3Condicional {
         } else if (hora>=1&&hora<=5) {
             System.out.println("buenas noches!!!");
         }else {
-            System.out.println("Hora incorrecta, porfavor introducalo de nuevo");
+            System.out.println("Hora incorrecta, porfavor introzducalo de nuevo");
         }
     }
 }
