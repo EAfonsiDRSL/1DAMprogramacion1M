@@ -1,4 +1,4 @@
-package Sesion1710;
+package Sesion1710.Condicionales;
 /*
 realizar un programa que realize una ecuacion de primer grado
 ax+b=0
