@@ -7,12 +7,20 @@ public class Ejercicio7y8Condicionales {
         //declarar e inicializar variables
         float nota1=0, nota2=0, nota3=0;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Introduzca la primera nota");
-        nota1 = sc.nextFloat();
-        System.out.println("Introduzca la segunda nota");
+        do {System.out.println("Introduzca la primera nota");
+            nota1 = sc.nextFloat();
+
+        }while (nota1<0);
+
+        do {System.out.println("Introduzca la segunda nota");
         nota2 = sc.nextFloat();
-        System.out.println("Introduzca la tercera nota");
-        nota3 = sc.nextFloat();
+        }while (nota2<0);
+
+        do {
+            System.out.println("Introduzca la tercera nota");
+            nota3 = sc.nextFloat();
+        }while (nota3<0);
+
         float media = (nota1+nota2+nota3)/3;
         if (nota1<0|nota2<0|nota3<0) {
             System.out.println("Porfavor introduzca un valor correcto");

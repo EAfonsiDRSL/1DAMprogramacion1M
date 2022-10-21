@@ -1,5 +1,6 @@
 package Sesion1710.Condicionales;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 /*
@@ -12,7 +13,7 @@ Viernes= Fol
 public class Ejercicio2Condicionales {
     public static void main(String[] args) {
         String dia="";
-
+        dia = dia.toLowerCase();
         Scanner sc= new Scanner(System.in);
         System.out.println("Introduzca un dia de la semana");
         dia=sc.next();
@@ -31,6 +32,8 @@ public class Ejercicio2Condicionales {
                 System.out.println("Hoy es fin de semana!!!!, descansa que no hay clases");break;
             case "domingo":
                 System.out.println("Hoy es fin de semana!!!!, descansa que no hay clases");break;
+            default:
+                System.out.println("Valor incorrecto");
 
         }
     }
