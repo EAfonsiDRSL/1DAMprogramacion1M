@@ -6,7 +6,10 @@ usar bucle 'for'
 
 public class Ejercicio4Bucles {
     public static void main(String[] args) {
-        for(int i=320;i>=160;i-=20){
+        final int NUM1=320;
+        final int NUM2=160;
+        final int DECREMENTO=20;
+        for(int i=NUM1;i>=NUM2;i-=DECREMENTO){
             System.out.println(i);
         }
     }

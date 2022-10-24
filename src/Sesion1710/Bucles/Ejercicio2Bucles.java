@@ -6,10 +6,9 @@ usar 'while'
 
 public class Ejercicio2Bucles {
     public static void main(String[] args) {
+        final int I=100;
         int numero=0;
-        if (numero>100){
-            System.out.println("Numero mayor que 100");}
-        while (numero<=100){
+        while (numero<=I){
             System.out.println(numero);
             numero +=5;
         }

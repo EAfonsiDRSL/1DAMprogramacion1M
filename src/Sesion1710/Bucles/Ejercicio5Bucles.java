@@ -6,6 +6,7 @@ usar bucle 'while'
 
 public class Ejercicio5Bucles {
     public static void main(String[] args) {
+
         int numero =320;
 
 
