@@ -18,6 +18,7 @@ public class Ejercicio6Condicionales {
         if (h<0){
             System.out.println("NO existe solucion real para raices negativas");
         }else {
+
             System.out.println("El tiempo en caer el objeto es de "+Math.sqrt((2*h)/G)+" segundos");}
 
 
