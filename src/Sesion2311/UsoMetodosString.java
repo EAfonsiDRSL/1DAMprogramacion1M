@@ -48,7 +48,7 @@ public class UsoMetodosString {
         System.out.println(pais20.trim());
         System.out.println(pais20.trim().length());//elimina espacios
 
-    }
+}
 
 
 
