@@ -1,0 +1,5 @@
+package Sesion2411;
+
+public enum Notas {
+    INSUFICIENTE, SUFICIENTE, BIEN, NOTABLE, SOBRESALIENTE
+}
