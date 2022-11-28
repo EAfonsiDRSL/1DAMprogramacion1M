@@ -39,7 +39,7 @@ public class UsoMetodosString {
         System.out.println(pais4.indexOf("a"));//cuenta la posicion de un char desde el principio
         System.out.println(pais4.lastIndexOf("a"));//cuenta la posicion de un chart desde el final
         String animal="perro";
-        System.out.println(animal.replace('o','a'));// sustituye todas las letras que indeques por la otra que indiques
+        System.out.println(animal.replace('o','a'));// sustituye todas las letras que indiques por la otra que indiques
         System.out.println(animal.substring(0,2));//saca los prefijos desde el rango de posicion que indiques
         System.out.println(animal.startsWith("pa"));
         String pais20=" Qatar ";

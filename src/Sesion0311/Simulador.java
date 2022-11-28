@@ -8,6 +8,7 @@ public class Simulador {
 
     public static void main(String[] args) {
         String operacion=" ";
+        Calculadora calc= new Calculadora();
         Scanner sc=new Scanner(System.in);
         System.out.println("¿que operacion desea realizar?");
         System.out.println("suma");
@@ -18,6 +19,8 @@ public class Simulador {
         operacion=sc.next();
 
         if (operacion.equals("suma")){
+        //    calc.division();
+
 
 
         }else {
