@@ -31,7 +31,7 @@ public class Ejercicio {
                 System.out.println("Digame su palabra");
                 String long_palabra = "";
                 long_palabra = sc.next();
-                int longitud = longitudo_palabra(long_palabra);
+               // int longitud = longitudo_palabra(long_palabra);
                 System.out.println("La longitud de su palabra es ");
 
         }
