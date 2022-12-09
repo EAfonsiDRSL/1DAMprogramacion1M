@@ -40,16 +40,16 @@ public class Metodos5 {
 
         if (opcion.equals("LIBRAS")){
             resultado = euros * LIBRAS;
-            System.out.println("La cantidad de euros en libras es " + resultado);
+            System.out.println("La cantidad de "+opcion+" es " + resultado);
         } else if (opcion.equals("DOLARES")) {
             resultado = euros * DOLAR;
 
-            System.out.println("La cantidad de euros en dolares es " + resultado);
+            System.out.println("La cantidad de " +opcion+" es " + resultado);
 
         } else if (opcion.equals("YENES")) {
             resultado = euros * YEN;
 
-            System.out.println("La cantidad de euros en yenes es " + resultado);
+            System.out.println("La cantidad de "+opcion+" es " + resultado);
 
         }
 
