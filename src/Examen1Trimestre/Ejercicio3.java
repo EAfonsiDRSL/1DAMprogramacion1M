@@ -8,12 +8,29 @@ public class Ejercicio3 {
 
     public static void main(String[] args) {
 
+        int opcion = 0 ;
+        Scanner sc = new Scanner(System.in);
         // declarar el array de int
 
         int dimension = solicitardimension();
         int [] array = new int[dimension];
         array = inicializar(array);
         System.out.println(Arrays.toString(array));
+        imprimir_multiplos(array);
+        numeros_negativos(array);
+        verifiar_capicua(array);
+
+        System.out.println("----------Introduzca una de las siguientes opciones----------");
+
+        do {
+            opcion = sc.nextInt();
+        System.out.println("0. Salir");
+        System.out.println("1. Inicializa array aleatoriamente");
+        System.out.println("2. Comprobar si es múltiplo de 3 y 5 a la vez");
+        System.out.println("3. Indicar el numero de negativos en el array");
+        System.out.println("4. Verificar si es capicua el array");
+        System.out.println("Esperando opcion...");
+        }while (opcion!=0);
 
     }
 
@@ -26,7 +43,6 @@ public class Ejercicio3 {
             resultado = sc.nextInt();
         }while (resultado <= 0);
 
-
         return resultado;
     }
     public static int [] inicializar(int [] array){
@@ -38,10 +54,54 @@ public class Ejercicio3 {
             array[i] = (int) (Math.random()*((MAX-MIN+1))+MIN);
         }
 
-
         return array;
     }
 
+    public static void imprimir_multiplos (int [] array){
+        int contador = 0 ;
+        for (int i =0 ; i < array.length; i++){
+            if ((array[i] % 3 == 0) && (array[i] % 5 == 0 )){
+                System.out.println("\u001B[31m"+array[i]+"\u001B[0m");
+                contador++;
+            }
+        }
+        if (contador==0){
+            System.out.println("No hay multiplos");
+        }
 
+
+    }
+    public static void numeros_negativos (int [] array){
+        int contador=0;
+        for (int i = 0 ; i < array.length ; i++){
+
+            if (array[i]<0){
+                contador++;
+            }
+        }
+
+        if (contador==0){
+            System.out.println("No hay numeros negativos");
+        }else{
+            System.out.println("El numero de negativos es "+contador);
+        }
+    }
+    public static void verifiar_capicua (int [] array){
+
+        int [] array_invertido = new int [array.length];
+        int j = array.length;
+        for (int i = 0 ; i < array_invertido.length; i++){
+            array_invertido [i] = array[i];
+            j--;
+        }
+        if (Arrays.equals(array_invertido,array)){
+            System.out.println("Es capicua");
+
+        }else {
+            System.out.println("No es capicua");
+        }
+
+
+    }
 
 }
