@@ -14,22 +14,23 @@ public class Ejercicio3 {
 
         int dimension = solicitardimension();
         int [] array = new int[dimension];
-        array = inicializar(array);
-        System.out.println(Arrays.toString(array));
-        imprimir_multiplos(array);
-        numeros_negativos(array);
-        verifiar_capicua(array);
-
-        System.out.println("----------Introduzca una de las siguientes opciones----------");
 
         do {
-            opcion = sc.nextInt();
+            System.out.println("----------Introduzca una de las siguientes opciones----------");
         System.out.println("0. Salir");
         System.out.println("1. Inicializa array aleatoriamente");
         System.out.println("2. Comprobar si es múltiplo de 3 y 5 a la vez");
         System.out.println("3. Indicar el numero de negativos en el array");
         System.out.println("4. Verificar si es capicua el array");
         System.out.println("Esperando opcion...");
+            opcion = sc.nextInt();
+
+        switch (opcion){
+            case 1: array = inicializar(array);System.out.println(Arrays.toString(array));break;
+            case 2: imprimir_multiplos(array);break;
+            case 3: numeros_negativos(array);break;
+            case 4: verifiar_capicua(array);break;
+            }
         }while (opcion!=0);
 
     }
