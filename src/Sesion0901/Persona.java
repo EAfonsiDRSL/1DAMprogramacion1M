@@ -1,8 +1,11 @@
 package Sesion0901;
 
+import java.lang.ref.SoftReference;
+
 public class Persona {
 
     //atributos
+    public static int contador = 0;
     private String dni;
     private String nombre;
     private String apellidos;
@@ -10,8 +13,18 @@ public class Persona {
 
     //metodos
 
-    public Persona(){
-
+     Persona(){
+        contador ++;
+    }
+    Persona (String nombre, String dni, String apellidos, int edad){
+        this.nombre=nombre;
+        this.apellidos=apellidos;
+        this.dni=dni;
+        this.edad=edad;
+        //contador=contador+1;
+    }
+    public int getContador(){
+        return contador;
     }
 
     public int getEdad() {
