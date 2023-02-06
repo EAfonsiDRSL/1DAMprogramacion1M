@@ -118,11 +118,21 @@ public class Planetas {
     public void setObservable(boolean observable) {
         this.observable = observable;
     }
-    //@Override
-   // public ToString(){
 
-      //  return "Nombre"+this.nombre+"Cantidad de satelites"+this.satelites+""+this.masa+this.diametro+this.distancia_al_sol+this.tipo+this.observable
-    //}
+    @Override
+    public String toString() {
+        return "Planetas{" +
+                "nombre='" + nombre + '\'' +
+                ", satelites=" + satelites +
+                ", masa=" + masa +
+                ", volumen=" + volumen +
+                ", diametro=" + diametro +
+                ", distancia_al_sol=" + distancia_al_sol +
+                ", tipo=" + tipo +
+                ", observable=" + observable +
+                '}';
+    }
+
     public void imprimir(){
         System.out.println("El nombre del planeta es "+nombre);
         System.out.println("La cantidad de satelites que tienes es "+satelites);
@@ -132,20 +142,22 @@ public class Planetas {
         System.out.println("Es de tipo "+tipo);
         System.out.println("Es observable a simple vista? "+observable);
     }
-    public double calculo_densidad(double masa, double volumen){
+
+    //método calcular densidad
+    public double calculo_densidad(){
         double densidad=0;
-
         densidad= masa/volumen;
-
         return densidad;
     }
-    public void exterior(int distancia_al_sol) {
 
-        if (distancia_al_sol > 149597870) {
-            System.out.println("El planeta es considerado exterior");
-        }else{
-            System.out.println("El planeta no es considerado exterior");
+    //método
+    public boolean exterior() {
+        boolean esExterior=false;
+        float limite = (float) (149597870*3.4);
+
+        if (distancia_al_sol>limite){
+            esExterior=true;
         }
-
+        return esExterior;
     }
 }
