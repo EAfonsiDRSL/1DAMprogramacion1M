@@ -1,7 +1,11 @@
 package Persona.Viajero;
 
+import java.util.Scanner;
+
 public class Viajero {
 
+
+    public static int contador;
     private String DNI;
     private String nombre;
     private String apellidos;
@@ -10,7 +14,7 @@ public class Viajero {
 
 
     public Viajero(){
-
+        contador++;
     }
 
     public Viajero(String DNI, String nombre, String apellidos, String nacionalidad, String direccion){
@@ -60,5 +64,29 @@ public class Viajero {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
+    }
+    public void getInfo(Formato modo){
+        String entrada="";
+        Scanner sc = new Scanner(System.in);
+        switch (modo){
+            case normal:
+                System.out.println("El dni del pasajero es "+DNI);
+                System.out.println("El nombre y apellido del pasajero es "+nombre+apellidos);
+                System.out.println("El pasajero tiene la nacionalidad: "+nacionalidad);
+                System.out.println("La direccion del pasajero es: "+direccion);
+                break;
+            case pausado:
+                System.out.println("El dni del pasajero es "+DNI);
+                entrada = sc.nextLine();
+                System.out.println("El nombre y apellido del pasajero es "+nombre+" "+apellidos);
+                entrada = sc.nextLine();
+                System.out.println("El pasajero tiene la nacionalidad: "+nacionalidad);
+                entrada = sc.nextLine();
+                System.out.println("La direccion del pasajero es: "+direccion);
+                entrada = sc.nextLine();
+                break;
+
+
+        }
     }
 }
