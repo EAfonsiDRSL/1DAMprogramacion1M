@@ -18,4 +18,13 @@ public class Moto extends Vehiculos{
     public void setCilindrada(int cilindrada) {
         this.cilindrada = cilindrada;
     }
+
+    @Override
+    public String toString() {
+        return "Moto{" +
+                "cilindrada=" + cilindrada +
+                ", km_realizados=" + km_realizados +
+                ", matrícula='" + matrícula + '\'' +
+                "} " + super.toString();
+    }
 }

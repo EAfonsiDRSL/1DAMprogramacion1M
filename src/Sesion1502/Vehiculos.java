@@ -1,5 +1,7 @@
 package Sesion1502;
 
+import java.util.Scanner;
+
 public class Vehiculos {
 
     protected int km_realizados;
@@ -30,4 +32,20 @@ public class Vehiculos {
     }
 
 
+    public int run (){
+        int km=0;
+
+        Scanner sc = new Scanner(System.in);
+        km = sc.nextInt();
+
+        return km + this.km_realizados;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehiculos{" +
+                "km_realizados=" + km_realizados +
+                ", matrícula='" + matrícula + '\'' +
+                '}';
+    }
 }

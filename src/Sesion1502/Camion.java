@@ -20,4 +20,13 @@ public class Camion extends Vehiculos{
     public void setNumeros_ejes(int numeros_ejes) {
         this.numeros_ejes = numeros_ejes;
     }
+
+    @Override
+    public String toString() {
+        return "Camion{" +
+                "numeros_ejes=" + numeros_ejes +
+                ", km_realizados=" + km_realizados +
+                ", matrícula='" + matrícula + '\'' +
+                "} " + super.toString();
+    }
 }
