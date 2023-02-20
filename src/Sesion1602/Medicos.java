@@ -1,5 +1,7 @@
 package Sesion1602;
 
+import java.util.Arrays;
+
 public class Medicos {
     //atributos
     protected String nombre;
@@ -44,5 +46,26 @@ public class Medicos {
 
     public void setLista(Paciente[] lista) {
         this.lista = lista;
+    }
+
+    @Override
+    public String toString() {
+        return "Medicos{" +
+                "nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", numero_colegiado=" + numero_colegiado +
+                ", lista=" + Arrays.toString(lista) +
+                '}';
+    }
+    public boolean tratra(String dni){
+        boolean resultado = false;
+
+        for (int i = 0 ; i < lista.length;i++){
+            if(dni.equals(lista[i].getDni())){
+                resultado = true;
+                break;
+            }
+        }
+        return resultado;
     }
 }

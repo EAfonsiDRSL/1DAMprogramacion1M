@@ -26,4 +26,16 @@ public class Podologo extends Medicos{
     public void setPlanta(int planta) {
         this.planta = planta;
     }
+    public boolean trabaja (String hospital){
+        boolean trabaja = false;
+        if (hospital.toLowerCase().equals(this.hospital.toLowerCase())){
+            trabaja = true;
+        }
+        return trabaja;
+    }
+    public void Pacientes (Paciente [] pacientes){
+        for (int i = 0 ; i< pacientes.length; i ++){
+            System.out.println(pacientes[i].toString());
+        }
+    }
 }

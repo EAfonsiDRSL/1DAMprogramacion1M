@@ -9,6 +9,9 @@ public class Paciente {
         this.dni = dni;
         this.nombre = nombre;
     }
+    public Paciente(){
+
+    }
 
     public String getDni() {
         return dni;
@@ -24,5 +27,13 @@ public class Paciente {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    @Override
+    public String toString() {
+        return "Paciente{" +
+                "dni='" + dni + '\'' +
+                ", nombre='" + nombre + '\'' +
+                '}';
     }
 }
