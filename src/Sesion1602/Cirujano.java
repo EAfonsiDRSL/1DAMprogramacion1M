@@ -38,4 +38,10 @@ public class Cirujano extends Medicos {
             System.out.println(pacientes[i].toString());
         }
     }
+
+    @Override
+    public String toString(){
+        return super.toString() +" hospital: "+this.hospital+
+                "numero de box: "+this.numero_de_box;
+    }
 }

@@ -1,6 +1,7 @@
 package Sesion1602;
 
 import java.security.MessageDigest;
+import java.util.Arrays;
 
 public class DeFamilia extends Medicos {
 
@@ -17,5 +18,12 @@ public class DeFamilia extends Medicos {
 
     public void setNombre_centro_salud(String nombre_centro_salud) {
         this.nombre_centro_salud = nombre_centro_salud;
+    }
+
+    @Override
+    public String toString() {
+        return "DeFamilia{" +
+                "nombre_centro_salud='" + nombre_centro_salud + '\'' +
+               super.toString();
     }
 }

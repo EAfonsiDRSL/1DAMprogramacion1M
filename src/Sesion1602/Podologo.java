@@ -38,4 +38,12 @@ public class Podologo extends Medicos{
             System.out.println(pacientes[i].toString());
         }
     }
+
+    @Override
+    public String toString() {
+        return "Podologo{" +
+                "hospital='" + hospital + '\'' +
+                ", planta=" + planta +
+                '}'+ super.toString();
+    }
 }
