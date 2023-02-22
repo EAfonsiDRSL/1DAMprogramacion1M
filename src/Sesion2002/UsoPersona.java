@@ -5,7 +5,7 @@ public class UsoPersona {
 
 
         try {
-            Persona persona1 = new Persona("Eliot",19);
+            Persona persona1 = new Persona("",19);
 
         }
         catch (IllegalArgumentException e){
