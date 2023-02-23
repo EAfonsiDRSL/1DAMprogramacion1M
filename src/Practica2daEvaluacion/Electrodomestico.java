@@ -6,7 +6,7 @@ public class Electrodomestico {
 
     //atributos
     protected double precio_base=100;
-    protected double precio_final;
+    protected double precio_final=0;
     protected Color color = Color.blancos;
     protected char consumo_energetico='F';
     protected double peso=5;
@@ -23,7 +23,7 @@ public class Electrodomestico {
     public Electrodomestico(double precio_base, double precio_final, Color color, char consumo_energetico, double peso) {
         this.precio_base = precio_base;
         this.precio_final = precio_final;
-        this.color = color;
+        this.color = Color.blancos;
         this.consumo_energetico = consumo_energetico;
         this.peso = peso;
     }
@@ -103,9 +103,34 @@ public class Electrodomestico {
 
 
         }
-        public void comprobarColor(Color color) throws ProductoIncorrecto{
-        if (color.equals(Color.values())){
-            throw new ProductoIncorrecto("Este color no esta dentro de la gama");
+        public void comprobarColor(Color color) throws ProductoIncorrecto {
+
+            if (!(color.equals(Color.blancos) || color.equals(Color.negro) || color.equals(Color.rojo) || color.equals(Color.azul) || color.equals(Color.gris))) {
+
+                throw new ProductoIncorrecto("Este color no esta dentro de la gama");
+
+            }
         }
-    }
+        public double precioFinal(){
+
+       switch (consumo_energetico){
+           case 'A': precio_final = precio_base + 100;break;
+           case 'B': precio_final = precio_base + 80;break;
+           case 'C': precio_final = precio_base + 60;break;
+           case 'D': precio_final = precio_base + 50;break;
+           case 'E': precio_final = precio_base + 30;break;
+           case 'F': precio_final = precio_base + 10;break;
+       }
+       if (peso >0 && peso < 19) {
+           precio_final += 10;
+       } else if (peso >= 20 && peso < 50) {
+            precio_final += 50;
+       } else if (peso >= 50 && peso < 80) {
+           precio_final += 80;
+       } else if (peso >= 80) {
+           precio_final += 100;
+       }
+            return precio_final;
+        }
+
 }
