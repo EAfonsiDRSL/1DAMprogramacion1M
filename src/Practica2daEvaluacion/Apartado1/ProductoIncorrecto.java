@@ -1,4 +1,4 @@
-package Practica2daEvaluacion;
+package Practica2daEvaluacion.Apartado1;
 
 import javax.swing.text.Style;
 
