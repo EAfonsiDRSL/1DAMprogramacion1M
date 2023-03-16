@@ -1,6 +1,5 @@
-package Ejercicio2;
+package Examen2trimestre.Ejercicio2;
 
 public enum Categoria {
-
-    junior,senior, jefe_proyecto
+    junior, senior, jefe_proyecto
 }

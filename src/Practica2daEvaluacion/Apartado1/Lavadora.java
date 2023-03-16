@@ -3,13 +3,19 @@ package Practica2daEvaluacion.Apartado1;
 import Practica2daEvaluacion.Apartado1.Electrodomestico;
 
 public class Lavadora extends Electrodomestico {
+    /**atributos*/
+    private double carga=5;
 
-    protected double carga=5;
-
+    /**Contuctores (son 3)*/
     public Lavadora() {
     }
 
-    public Lavadora(double precio_base, double precio_final, String color, char consumo_energetico, double peso, double carga) {
+    public Lavadora(double precio_base, double peso, double carga) {
+        super(precio_base, peso);
+        this.carga = carga;
+    }
+
+    public Lavadora(double precio_base, double precio_final, String color, String consumo_energetico, double peso, double carga) throws ProductoIncorrecto {
         super(precio_base, precio_final, color, consumo_energetico, peso);
         this.carga = carga;
     }
@@ -18,43 +24,17 @@ public class Lavadora extends Electrodomestico {
         return carga;
     }
 
-    protected double precioFinal() {
+    public void setCarga(double carga) {
+        this.carga = carga;
+    }
 
-        switch (consumo_energetico) {
-            case 'A':
-                precio_final = precio_base + 100;
-                break;
-            case 'B':
-                precio_final = precio_base + 80;
-                break;
-            case 'C':
-                precio_final = precio_base + 60;
-                break;
-            case 'D':
-                precio_final = precio_base + 50;
-                break;
-            case 'E':
-                precio_final = precio_base + 30;
-                break;
-            case 'F':
-                precio_final = precio_base + 10;
-                break;
-        }
-        if (peso > 0 && peso < 19) {
-            precio_final += 10;
-        } else if (peso >= 20 && peso < 50) {
-            precio_final += 50;
-        } else if (peso >= 50 && peso < 80) {
-            precio_final += 80;
-        } else if (peso >= 80) {
-            precio_final += 100;
-        }
+    @Override
+    protected double precioFinal() {
+       precio_final=super.precioFinal();
 
         if (carga > 30){
             precio_final += 50;
         }
-
-
         return precio_final;
     }
 }
