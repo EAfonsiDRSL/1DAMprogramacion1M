@@ -4,9 +4,9 @@ public abstract class Electrodomestico {
 
     //atributos
     protected double precio_base = 100;
-    protected double precio_final = 0;
+    protected double precio_final;
     protected Color color = Color.blancos;
-    protected char consumo_energetico = 'F';
+    protected Consumo consumo_energetico= Consumo.F;
     protected double peso = 5;
 
 
@@ -14,16 +14,27 @@ public abstract class Electrodomestico {
     public Electrodomestico() {
     }
 
-    public Electrodomestico(double precio_final, double peso) {
+    public Electrodomestico(double precio_base, double peso) {
+        this.precio_base = precio_base;
         this.peso = peso;
-        this.precio_final = precio_final;
+        this.precio_final=precioFinal();
+
     }
 
-    public Electrodomestico(double precio_base, double precio_final, String color, char consumo_energetico, double peso) {
-        this.precio_base = precio_base;
-        this.precio_final = precio_final;
-        this.color = Color.blancos;
-        this.consumo_energetico = consumo_energetico;
+    public Electrodomestico(double precio_base, double precio_final, String color, String consumo_energetico, double peso) throws ProductoIncorrecto{
+
+        if (comprobarConsumoEnergetico(consumo_energetico.toUpperCase().charAt(0))){
+            this.precio_base = precio_base;
+            this.consumo_energetico = Consumo.valueOf(consumo_energetico.toUpperCase());
+        }
+
+
+        this.precio_final = precioFinal();
+        if (comprobarColor(color.toString())){
+            this.color = Color.valueOf(color);
+        }
+
+
         this.peso = peso;
     }
 
@@ -39,90 +50,63 @@ public abstract class Electrodomestico {
         return precio_final;
     }
 
-    public void setPrecio_final(double precio_final) {
-        this.precio_final = precio_final;
-    }
-
     public Color getColor() {
         return color;
     }
 
-    public void setColor(Color color) {
-        this.color = color;
-    }
-
-    public char getConsumo_energetico() {
-        return consumo_energetico;
-    }
-
-    public void setConsumo_energetico(char consumo_energetico) {
-        this.consumo_energetico = consumo_energetico;
-    }
-
-    public double getPeso() {
-        return peso;
-    }
-
-    public void setPeso(double peso) {
-        this.peso = peso;
-    }
-
-    public void comprobarConsumoEnergetico() throws ProductoIncorrecto {
-        switch (consumo_energetico) {
-            case 'A':
-                if (!(precio_final >= 100)) {
-                    throw new ProductoIncorrecto("No es correcto la letra con precio");
-                }
-                break;
-            case 'B':
-                if (!(precio_final >= 80 && precio_final < 100)) {
-                    throw new ProductoIncorrecto("No es correcto la letra con precio");
-                }
-                break;
-            case 'C':
-                if (!(precio_final >= 60 && precio_final < 80)) {
-                    throw new ProductoIncorrecto("No es correcto la letra con precio");
-                }
-                break;
-            case 'D':
-                if (!(precio_final >= 50 && precio_final < 60)) {
-                    throw new ProductoIncorrecto("No es correcto la letra con precio");
-                }
-                break;
-            case 'E':
-                if (!(precio_final >= 30 && precio_final < 50)) {
-                    throw new ProductoIncorrecto("No es correcto la letra con precio");
-                }
-                break;
-            case 'F':
-                if (!(precio_final >= 10 && precio_final < 30)) {
-                    throw new ProductoIncorrecto("No es correcto la letra con precio");
-                }
-                break;
+    public void setColor(Color color)throws ProductoIncorrecto {
+        if (comprobarColor(color.toString())){
+            this.color = color;
         }
 
+    }
 
+
+
+    public boolean comprobarConsumoEnergetico(char letra) throws ProductoIncorrecto {
+        boolean resultado = false;
+        if (Consumo.A.toString().equals(letra) && precio_base >=100
+        || Consumo.B.toString().equals(letra) && precio_base>=80 && precio_base < 100
+        || Consumo.C.toString().equals(letra) && precio_base >= 60 && precio_base < 80
+        || Consumo.D.toString().equals(letra) && precio_base >= 50 && precio_base < 60
+        ||Consumo.E.toString().equals(letra) && precio_base >=30 && precio_base < 50
+        || Consumo.F.toString().equals(letra) && precio_base >=10 && precio_base < 30){
+            resultado = true;
+        }
+        return resultado;
     }
 
     public boolean comprobarColor(String color) throws ProductoIncorrecto {
-        boolean dentro_de_la_gama = false;
         if (Color.blancos.toString().equals(color) || Color.negro.toString().equals(color) || Color.azul.toString().equals(color) || Color.rojo.toString().equals(color) || Color.gris.toString().equals(color)) {
-            dentro_de_la_gama = true;
+            return true;
         } else {
             throw new ProductoIncorrecto("Este color no esta dentro de la gama");
         }
-        return dentro_de_la_gama;
     }
 
-    protected abstract double precioFinal();
+    protected double precioFinal(){
+        switch (consumo_energetico){
+            case A: precio_final = precio_base+100;break;
+            case B: precio_final = precio_base+80;break;
+            case C: precio_final = precio_base+60;break;
+            case D: precio_final = precio_base+50;break;
+            case E: precio_final = precio_base+30;break;
+            case F: precio_final = precio_base+10;break;
 
-    @Override
-    public String toString(){
-        return "El precio base es "+precio_base+
-                "\n precio final es "+precio_final+
-                "\n El color es "+color+
-                "\n El consumo energetico es "+consumo_energetico+
-                "\n El peso es "+peso;
+        }
+        if (peso > 0 && peso < 19) {
+            precio_final += 10;
+        } else if (peso >= 20 && peso < 50) {
+            precio_final += 50;
+        } else if (peso >= 50 && peso < 80) {
+            precio_final += 80;
+        } else {
+            precio_final += 100;
+        }
+
+        return precio_final;
     }
+
+
 
 }

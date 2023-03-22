@@ -8,6 +8,4 @@ public abstract class Figura implements IAcciones {
     public abstract double area();
 
 
-
-
 }
