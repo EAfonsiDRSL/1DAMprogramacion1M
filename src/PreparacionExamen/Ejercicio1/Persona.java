@@ -41,8 +41,8 @@ public class Persona {
         }
         this.edad = edad;
         this.dni = dni;
-        this.dni_completo= generarDNI();
-        if (!Sexo.valueOf(sexo).equals(Sexo.h) || !Sexo.valueOf(sexo).equals(Sexo.m)){
+        this.dni_completo = generarDNI();
+        if (!(Sexo.valueOf(sexo).equals(Sexo.h) || Sexo.valueOf(sexo).equals(Sexo.m))){
             throw new SexoIncorrecto("El sexo introducido no es válido");
         }
         this.sexo = Sexo.valueOf(sexo.toLowerCase());
@@ -166,7 +166,7 @@ public class Persona {
     }
 
     public void setSexo(String sexo)throws SexoIncorrecto {
-        if (!Sexo.valueOf(sexo).equals(Sexo.h) || !Sexo.valueOf(sexo).equals(Sexo.m)){
+        if (!(Sexo.valueOf(sexo).equals(Sexo.h) || Sexo.valueOf(sexo).equals(Sexo.m))){
             throw new SexoIncorrecto("El sexo introducido no es válido");
         }
         this.sexo = Sexo.valueOf(sexo.toLowerCase());
