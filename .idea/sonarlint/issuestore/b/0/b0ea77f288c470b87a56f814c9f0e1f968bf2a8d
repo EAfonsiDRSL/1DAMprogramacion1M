@@ -1,0 +1,14 @@
+
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÓ„8äØ‰Âğ0
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÓ„8åØ‰Âğ0
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İã¸ïùÿÿÿÿ8çØ‰Âğ0
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İã¸ïùÿÿÿÿ8éØ‰Âğ0
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İã¸ïùÿÿÿÿ8ëØ‰Âğ0
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İã¸ïùÿÿÿÿ8íØ‰Âğ0
+r	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«äÑíüÿÿÿÿ8ïØ‰Âğ0
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ù°Ø8òØ‰Âğ0
+w	java:S116"[Rename this field "sintonizador_TDT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï Ï‘8ûØ‰Âğ0
+i	java:S100+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´¤¬X8Ù‰Âğ0
+o	java:S100/"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«äÑíüÿÿÿÿ8‚Ù‰Âğ0
+v
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(¶—éÿÿÿÿÿ8†Ù‰Âğ0

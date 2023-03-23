@@ -1,0 +1,11 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Ğ“Óÿÿÿÿÿ8äÙ‰Âğ0
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Ğ“Óÿÿÿÿÿ8äÙ‰Âğ0
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Ğ“Óÿÿÿÿÿ8äÙ‰Âğ0
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šôüO8äÙ‰Âğ0
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ïĞ‡”şÿÿÿÿ8åÙ‰Âğ0
+x	java:S116"\Rename this field "numero_frecuencia" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘³øÀ8óÙ‰Âğ0
+i	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šôüO8ÿÙ‰Âğ0
+j	java:S100'"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒïÍ8Ú‰Âğ0
+Z	java:S106="9Replace this use of System.out or System.err by a logger.(¢èñ‚øÿÿÿÿ8„Ú‰Âğ0
+Z	java:S106F"9Replace this use of System.out or System.err by a logger.(à¢ùıÿÿÿÿ8†Ú‰Âğ0

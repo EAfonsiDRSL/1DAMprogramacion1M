@@ -1,0 +1,8 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ïê‡Ğøÿÿÿÿ8Æ×‰Âğ0
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶’ñıÿÿÿÿ8Æ×‰Âğ0
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶’ñıÿÿÿÿ8Æ×‰Âğ0
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶’ñıÿÿÿÿ8Æ×‰Âğ0
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ù°Ø8È×‰Âğ0
+v
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(¶—éÿÿÿÿÿ8ü×‰Âğ0
