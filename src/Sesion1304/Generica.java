@@ -24,10 +24,10 @@ public class Generica {
         arraydinamicoInteger.add(20);
         System.out.println(arraydinamicoInteger.toString());
 
-        arraydinamicoPersona.add(new Persona("43243443c"));
-        arraydinamicoPersona.add(new Persona("18817727e"));
-        arraydinamicoPersona.add(new Persona("12345678y"));
-        Persona p1 = new Persona("34242342j");
+        arraydinamicoPersona.add(new Persona("43243443c","4242342344k",23));
+        arraydinamicoPersona.add(new Persona("18817727e","4242342344k",23));
+        arraydinamicoPersona.add(new Persona("12345678y","4242342344k",23));
+        Persona p1 = new Persona("0","4242342344k",23);
         arraydinamicoPersona.add(p1);
         System.out.println(arraydinamicoPersona.toString());
 
