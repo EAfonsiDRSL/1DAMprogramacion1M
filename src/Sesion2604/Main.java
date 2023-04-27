@@ -16,7 +16,7 @@ public class Main {
         double numero_antiguo,numero_nuevo=0;
         int posicion=0;
 
-        ArrayList<Double> lista_reales = new ArrayList<>();
+
 
 
 
@@ -76,12 +76,22 @@ public class Main {
     }
 
     private static void imprimir_array(ArrayList<Double> lista_reales) {
+
+            System.out.println(lista_reales.toString());
+
     }
 
     private static void add_specific(double numero, int posicion) {
+
+        lista_reales.set(posicion,numero);
+
+
     }
 
     private static void eliminar(double numero) {
+
+        lista_reales.remove(numero);
+        //lista_reales.remove(lista_reales.indexOf(numero));
     }
 
     private static void modificar(double numero_antiguo, double numero_nuevo) {
