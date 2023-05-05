@@ -66,4 +66,16 @@ public class Persona {
     public void setPeso(double peso) {
         this.peso = peso;
     }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "dni='" + dni + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", sexo=" + sexo +
+                ", edad=" + edad +
+                ", peso=" + peso +
+                '}';
+    }
 }
