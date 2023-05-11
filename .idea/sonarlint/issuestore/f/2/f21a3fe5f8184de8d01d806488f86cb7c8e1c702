@@ -1,0 +1,16 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”èƒııÿÿÿÿ8ŸÕ‰Âğ0
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôôæûÿÿÿÿ8¡Õ‰Âğ0
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ıÕ˜ûÿÿÿÿ8¢Õ‰Âğ0
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù½îşøÿÿÿÿ8¢Õ‰Âğ0
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ù°Ø8©Õ‰Âğ0
+Z	java:S106""9Replace this use of System.out or System.err by a logger.(¥Öıâøÿÿÿÿ8‚×‰Âğ0
+Z	java:S106+"9Replace this use of System.out or System.err by a logger.(õÀ·‹ıÿÿÿÿ8‡×‰Âğ0
+Z	java:S106,"9Replace this use of System.out or System.err by a logger.(Ø¨¢úÿÿÿÿ8‡×‰Âğ0
+U	java:S106-"9Replace this use of System.out or System.err by a logger.(Í‡¬«8ˆ×‰Âğ0
+p
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Ï£Œv8×‰Âğ0
+v
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ö¢·•ùÿÿÿÿ8×‰Âğ0
+P
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8×‰Âğ0

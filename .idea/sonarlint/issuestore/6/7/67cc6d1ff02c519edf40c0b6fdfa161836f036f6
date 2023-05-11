@@ -1,0 +1,37 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ§ —
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™à£çÿÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™à£çÿÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™à£çÿÿÿÿÿ
+k	java:S117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ô’öùÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ù°Ø
+k	java:S116"VRename this field "precio_base" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½›¡Š
+l	java:S116"WRename this field "precio_final" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒşÄÇ
+w	java:S116	"]Rename this field "consumo_energetico" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ•ñ“üÿÿÿÿ
+T
+java:S5993"9Change the visibility of this constructor to "protected".(µÊÿÿÿÿÿ
+O
+java:S5993"9Change the visibility of this constructor to "protected".(Ñ§ —
+T
+java:S5993"9Change the visibility of this constructor to "protected".(™à£çÿÿÿÿÿ
+N
+java:S1172"3Remove this unused method parameter "precio_final".(™à£çÿÿÿÿÿ
+c
+java:S1858!"H"color" is already a string, there's no need to call "toString()" on it.(×Ã©Âûÿÿÿÿ
+h	java:S100)"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·Ğ³íúÿÿÿÿ
+h	java:S100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ô’öùÿÿÿÿ
+h	java:S1001"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş‚á¿üÿÿÿÿ
+¢
+java:S1130B"‹Remove the declaration of thrown exception 'Practica2daEvaluacion.Apartado1.ProductoIncorrecto', as it cannot be thrown from method's body.(Ìåáº
+l
+java:S2159D"VRemove this call to "equals"; comparisons between unrelated types always return false.(½ÊÁ
+q
+java:S2159E"VRemove this call to "equals"; comparisons between unrelated types always return false.(«öìÛÿÿÿÿÿ
+l
+java:S2159F"VRemove this call to "equals"; comparisons between unrelated types always return false.(¾¨¡í
+k
+java:S2159G"VRemove this call to "equals"; comparisons between unrelated types always return false.(é’¨h
+q
+java:S2159H"VRemove this call to "equals"; comparisons between unrelated types always return false.(ªòŒüÿÿÿÿ
+l
+java:S2159I"VRemove this call to "equals"; comparisons between unrelated types always return false.(æåÎä

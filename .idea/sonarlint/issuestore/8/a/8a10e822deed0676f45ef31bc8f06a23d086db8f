@@ -1,0 +1,19 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Š›ƒûÿÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Š›ƒûÿÿÿÿÿ
+f	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š°Åİ
+k	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬é¯«ıÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ˆÉıµşÿÿÿÿ
+h	java:S116"NRename this field "DNI" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èüöšıÿÿÿÿ
+}	java:S116
+"cRename this field "lenguaje_de_programacion" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ö°Âüÿÿÿÿ
+—
+java:S1186j"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÊïõ
+h	java:S100B"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(† Ç‹ûÿÿÿÿ
+h	java:S100F"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬é¯«ıÿÿÿÿ
+S	java:S106c"9Replace this use of System.out or System.err by a logger.(û®µÿÿÿÿÿ
+c	java:S100e"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡‹ÄÀ
+c	java:S100j"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãÊïõ
+S	java:S106s"9Replace this use of System.out or System.err by a logger.(ôÜ¨üıÿÿÿÿ
+H
+java:S1144j"2Remove this unused private "verificar_dni" method.(ãÊïõ
