@@ -80,9 +80,13 @@ public class Main {
     }
 
     private static void mostrar_tablas() throws SQLException {
-
+asignar_bd();
         DatabaseMetaData databaseMetaData = conn.getMetaData();
-        //ResultSet rs = databaseMetaData.getTables(asignar_bd(),);
+        ResultSet rs = databaseMetaData.getTables("ejercicioPractico","ejercicioPractico",null,null);
+        while (rs.next()){
+            System.out.println(rs.getString(3));
+            System.out.println("la url de mi bbdd es: "+databaseMetaData.getURL());
+        }
     }
 
     private static ArrayList<Jugador> almacenar_array_dinamico() throws SQLException {
