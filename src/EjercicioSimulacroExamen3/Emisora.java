@@ -15,7 +15,7 @@ public abstract class Emisora {
     //Constructor
 
 
-    public Emisora(int num_emisora, String nombre_emisora, double beneficios) throws AccionInvalida {
+    public Emisora(int num_emisora, String nombre_emisora, int num_oyentes) throws AccionInvalida {
         this.num_emisora = num_emisora;
         this.nombre_emisora = nombre_emisora;
         if (num_oyentes<0){

@@ -7,17 +7,15 @@ public class EmisoraTradicional extends Emisora {
     private double num_frecuencia;
     private Frecuencias frecuencias;
 
-    public EmisoraTradicional(int num_emisora, String nombre_emisora, double beneficios, double num_frecuencia) throws AccionInvalida {
-        super(num_emisora, nombre_emisora, beneficios);
-
+    public EmisoraTradicional(int num_emisora, String nombre_emisora, int num_oyentes, double num_frecuencia) throws AccionInvalida {
+        super(num_emisora, nombre_emisora, num_oyentes);
         this.num_frecuencia = num_frecuencia;
-
-
         if (num_frecuencia >= 540 && num_frecuencia <= 1600){
             this.frecuencias = Frecuencias.AM;
         } else if (num_frecuencia >= 88.1 && num_frecuencia <= 108.1) {
             this.frecuencias = Frecuencias.FM;
         }
+
     }
 
     public double getNum_frecuencia() {
