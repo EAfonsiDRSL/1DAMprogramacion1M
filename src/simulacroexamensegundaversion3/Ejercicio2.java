@@ -70,20 +70,46 @@ public class Ejercicio2 {
 
         }while (opcion != 0);
     }
-
-    private static void set_up() throws SQLException {
+    private static void crearTabla () throws SQLException {
 
         Statement st = conn.createStatement();
-        st.executeUpdate("Create database if not exists notas;");
         asignar_bd();
         st = conn.createStatement();
-        st.executeUpdate("create table calificaciones (" +
+        st.executeUpdate("create table asignaturas (" +
                 "id int not null primary key," +
                 "nombre varchar (50)," +
                 "nota_examen double," +
                 "nota_practica double);");
+    }
+    private static void crearBBDD () throws SQLException {
+        Statement st = conn.createStatement();
+        st.executeUpdate("Create database if not exists notas;");
+    }
+
+    private static void set_up() throws SQLException {
+
+        crearBBDD();
+        crearTabla();
 
         PreparedStatement ps = conn.prepareStatement("insert into asignaturas values (?,?,?,?)");
+        String asignatura="";
+        int id=0;
+        for (int i = 0; i< notas.length; i++){
+            id++;
+            for (int j = 0; j<notas[i].length; j++){
+            }
+            switch (i){
+                case 0: asignatura = "Programacion";break;
+                case 1: asignatura = "BBDD";break;
+                case 2: asignatura = "Entornos";break;
+            }
+            Asignaturas asignaturas = new Asignaturas(id,asignatura,notas[i][0],notas[i][1]);
+            ps.setInt(1,asignaturas.getId());
+            ps.setString(2,asignaturas.getNombre());
+            ps.setDouble(3,asignaturas.getNota_examen());
+            ps.setDouble(4,asignaturas.getNota_practica());
+            ps.executeUpdate();
+        }
 
 
     }
@@ -109,13 +135,14 @@ public class Ejercicio2 {
 
     private static double calcular_nota_media(int i) {
         double media = 0;
+        int divisor = 2;
         switch (i){
             case 1:
-                media = ((notas [0][0]*PORCENTAJE_EXAMEN) + (notas[0][1]*PORCENTAJE_PRACTICA))/2;break;
+                media = ((notas [0][0]*PORCENTAJE_EXAMEN) + (notas[0][1]*PORCENTAJE_PRACTICA))/divisor;break;
             case 2:
-                media = ((notas [1][0]*PORCENTAJE_EXAMEN) + (notas[1][1]*PORCENTAJE_PRACTICA))/2;break;
+                media = ((notas [1][0]*PORCENTAJE_EXAMEN) + (notas[1][1]*PORCENTAJE_PRACTICA))/divisor;break;
             case 3:
-                media = ((notas [2][0]*PORCENTAJE_EXAMEN) + (notas[2][1]*PORCENTAJE_PRACTICA))/2;break;
+                media = ((notas [2][0]*PORCENTAJE_EXAMEN) + (notas[2][1]*PORCENTAJE_PRACTICA))/divisor;break;
         }
 
         return media;
@@ -130,11 +157,11 @@ public class Ejercicio2 {
                     switch (j){
                         case 0:
                             System.out.println("Introduzca la nota de examen de programacion");
-                            notas[i][j] = sc.nextInt();
+                            notas[i][j] = sc.nextDouble();
                             break;
                         case 1:
                             System.out.println("Introduzca la nota de practica de programacion");
-                            notas[i][j] = sc.nextInt();
+                            notas[i][j] = sc.nextDouble();
                             break;
                 }
                 }
@@ -142,11 +169,11 @@ public class Ejercicio2 {
                     switch (j) {
                         case 0:
                             System.out.println("Introduzca la nota de examen de BBDD");
-                            notas[i][j] = sc.nextInt();
+                            notas[i][j] = sc.nextDouble();
                             break;
                         case 1:
                             System.out.println("Introduzca la nota de practica de BBDD");
-                            notas[i][j] = sc.nextInt();
+                            notas[i][j] = sc.nextDouble();
                             break;
                     }
                 }
@@ -154,11 +181,11 @@ public class Ejercicio2 {
                     switch (j) {
                         case 0:
                             System.out.println("Introduzca la nota de examen de Entornos");
-                            notas[i][j] = sc.nextInt();
+                            notas[i][j] = sc.nextDouble();
                             break;
                         case 1:
                             System.out.println("Introduzca la nota de practica de Entornos");
-                            notas[i][j] = sc.nextInt();
+                            notas[i][j] = sc.nextDouble();
                             break;
                     }
                 }
